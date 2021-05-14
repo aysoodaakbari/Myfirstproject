@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(102, 104, 110, 0.7), rgba(102, 104, 110, 0.7)), url(img/pexels-cottonbro-4503273.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+
+nav a h1 {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links ul li::after {
+    width: 0%;
+    height: 2px;
+    background-color: rgb(24, 104, 5);
+    display: block;
+    margin: auto;
+    content: '';
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #000;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 33px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #1f7a3aec;
+    background-color: #1f7a3aec;
+    transition: 1s;
+}
+
+nav .fas {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background-color: rgb(58, 58, 58);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2px;
+    }
+    nav .fas {
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+* {
+    box-sizing: border-box;
+}
+
+.plants {
+    padding-top: 80px;
+}
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5em;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+.caption,
+h1,
+.date {
+    margin: 0;
+    text-align: center;
+}
+
+.caption,
+h1 {
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 2em;
+    padding: 10px 10px 0 10px;
+}
+
+.date {
+    font-size: 0.75em;
+}
+
+.description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+}
+
+.container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 3%;
+}
+
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+    width: 250px;
+    height: 400px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+#content {
+    text-align: center;
+    height: 500px;
+}
+
+.comp {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plnt-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.test {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.test-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.test-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.test-col p {
+    padding: 0;
+}
+
+.test-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.test-col .fas {
+    color: #6cf436;
+}
